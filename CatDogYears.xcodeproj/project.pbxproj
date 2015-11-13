@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C6F396781BF5885800CA004D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F396771BF5885800CA004D /* AppDelegate.swift */; };
-		C6F3967A1BF5885800CA004D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F396791BF5885800CA004D /* ViewController.swift */; };
 		C6F3967D1BF5885800CA004D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F3967B1BF5885800CA004D /* Main.storyboard */; };
 		C6F3967F1BF5885800CA004D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F3967E1BF5885800CA004D /* Assets.xcassets */; };
 		C6F396821BF5885800CA004D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F396801BF5885800CA004D /* LaunchScreen.storyboard */; };
 		C6F3968D1BF5885800CA004D /* CatDogYearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F3968C1BF5885800CA004D /* CatDogYearsTests.swift */; };
 		C6F396981BF5885800CA004D /* CatDogYearsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F396971BF5885800CA004D /* CatDogYearsUITests.swift */; };
+		C6F396A61BF588B500CA004D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F396A51BF588B500CA004D /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		C6F396741BF5885800CA004D /* CatDogYears.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatDogYears.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F396771BF5885800CA004D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6F396791BF5885800CA004D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6F3967C1BF5885800CA004D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6F3967E1BF5885800CA004D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6F396811BF5885800CA004D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		C6F396931BF5885800CA004D /* CatDogYearsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatDogYearsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F396971BF5885800CA004D /* CatDogYearsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDogYearsUITests.swift; sourceTree = "<group>"; };
 		C6F396991BF5885800CA004D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6F396A51BF588B500CA004D /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				C6F396771BF5885800CA004D /* AppDelegate.swift */,
-				C6F396791BF5885800CA004D /* ViewController.swift */,
 				C6F3967B1BF5885800CA004D /* Main.storyboard */,
 				C6F3967E1BF5885800CA004D /* Assets.xcassets */,
 				C6F396801BF5885800CA004D /* LaunchScreen.storyboard */,
 				C6F396831BF5885800CA004D /* Info.plist */,
+				C6F396A51BF588B500CA004D /* MainVC.swift */,
 			);
 			path = CatDogYears;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F3967A1BF5885800CA004D /* ViewController.swift in Sources */,
 				C6F396781BF5885800CA004D /* AppDelegate.swift in Sources */,
+				C6F396A61BF588B500CA004D /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CatDogYears/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BenWebster.CatDogYears;
@@ -413,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CatDogYears/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BenWebster.CatDogYears;
