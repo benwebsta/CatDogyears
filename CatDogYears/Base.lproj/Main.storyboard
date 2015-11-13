@@ -18,10 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catdog2" translatesAutoresizingMaskIntoConstraints="NO" id="jHk-8V-sfT">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat &amp; Dog Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coN-fn-hPX">
                                 <rect key="frame" x="20" y="20" width="560" height="21"/>
                                 <animations/>
@@ -50,7 +46,7 @@
                                     <constraint firstAttribute="width" constant="140" id="pVZ-Qv-d4x"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1R-rW-XU3">
                                 <rect key="frame" x="20" y="145" width="157" height="30"/>
@@ -58,14 +54,24 @@
                                 <state key="normal" title="Calculate Cat Years">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateCatYearsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vS-Yt-8Hx"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpA-fJ-hC3">
-                                <rect key="frame" x="237" y="111" width="78" height="54"/>
+                                <rect key="frame" x="237" y="111" width="107" height="54"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="78" id="egA-BF-3ft"/>
+                                    <constraint firstAttribute="width" constant="107" id="egA-BF-3ft"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRk-gI-qJF">
+                                <rect key="frame" x="20" y="183" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -80,7 +86,7 @@
                                 <rect key="frame" x="20" y="241" width="140" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26y-Me-R7j">
                                 <rect key="frame" x="20" y="279" width="157" height="30"/>
@@ -88,9 +94,12 @@
                                 <state key="normal" title="Calculate Dog Years">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateDogYearsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="exC-qA-e38"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38O-bj-q45">
-                                <rect key="frame" x="237" y="245" width="78" height="54"/>
+                                <rect key="frame" x="237" y="241" width="107" height="54"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -119,19 +128,19 @@
                                 <state key="normal" title="Get Random Factoid">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="getRandomFactoidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jmc-wd-xJC"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRk-gI-qJF">
-                                <rect key="frame" x="20" y="183" width="560" height="21"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catdog2" translatesAutoresizingMaskIntoConstraints="NO" id="jHk-8V-sfT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WLS-Xy-AzW" firstAttribute="top" secondItem="38O-bj-q45" secondAttribute="bottom" constant="18" id="02Y-vS-Y1D"/>
+                            <constraint firstItem="WLS-Xy-AzW" firstAttribute="top" secondItem="38O-bj-q45" secondAttribute="bottom" constant="22" id="02Y-vS-Y1D"/>
                             <constraint firstItem="IWG-zf-vGx" firstAttribute="top" secondItem="TMt-SN-5Yq" secondAttribute="bottom" constant="8" symbolic="YES" id="05O-OJ-reH"/>
                             <constraint firstItem="jHk-8V-sfT" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="13B-7z-vEo"/>
                             <constraint firstItem="26y-Me-R7j" firstAttribute="leading" secondItem="IWG-zf-vGx" secondAttribute="leading" id="1JJ-JW-aro"/>
@@ -146,7 +155,7 @@
                             <constraint firstItem="Z25-xQ-4Cm" firstAttribute="top" secondItem="WLS-Xy-AzW" secondAttribute="bottom" constant="8" symbolic="YES" id="DwN-vz-sG7"/>
                             <constraint firstItem="aRk-gI-qJF" firstAttribute="leading" secondItem="G1R-rW-XU3" secondAttribute="leading" id="E8X-Cy-fN5"/>
                             <constraint firstItem="aRk-gI-qJF" firstAttribute="trailing" secondItem="TMt-SN-5Yq" secondAttribute="trailing" id="EFF-px-rDa"/>
-                            <constraint firstItem="38O-bj-q45" firstAttribute="top" secondItem="TMt-SN-5Yq" secondAttribute="bottom" constant="12" id="H3l-S2-4xL"/>
+                            <constraint firstItem="38O-bj-q45" firstAttribute="top" secondItem="TMt-SN-5Yq" secondAttribute="bottom" constant="8" id="H3l-S2-4xL"/>
                             <constraint firstItem="coN-fn-hPX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NZk-xY-eaj"/>
                             <constraint firstItem="aRk-gI-qJF" firstAttribute="top" secondItem="G1R-rW-XU3" secondAttribute="bottom" constant="8" symbolic="YES" id="R0A-ne-4M1"/>
                             <constraint firstItem="MTJ-8I-Wfe" firstAttribute="trailing" secondItem="26y-Me-R7j" secondAttribute="trailing" id="RDV-PU-3GK"/>
@@ -179,6 +188,13 @@
                             <constraint firstItem="IpA-fJ-hC3" firstAttribute="leading" secondItem="zcj-RX-FoJ" secondAttribute="trailing" constant="77" id="yfY-eZ-pwt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="catAgeEntry" destination="zcj-RX-FoJ" id="JE8-FI-fwy"/>
+                        <outlet property="catAgeResult" destination="IpA-fJ-hC3" id="bNj-Pl-OIU"/>
+                        <outlet property="dogAgeEntry" destination="IWG-zf-vGx" id="Fib-ey-2Az"/>
+                        <outlet property="dogAgeResult" destination="38O-bj-q45" id="kp8-Oh-c3X"/>
+                        <outlet property="randomFactoidText" destination="Z25-xQ-4Cm" id="TWo-hB-dEN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
