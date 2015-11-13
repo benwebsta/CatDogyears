@@ -14,6 +14,8 @@
 		C6F3968D1BF5885800CA004D /* CatDogYearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F3968C1BF5885800CA004D /* CatDogYearsTests.swift */; };
 		C6F396981BF5885800CA004D /* CatDogYearsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F396971BF5885800CA004D /* CatDogYearsUITests.swift */; };
 		C6F396A61BF588B500CA004D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F396A51BF588B500CA004D /* MainVC.swift */; };
+		C6F396A81BF63A2400CA004D /* meow.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6F396A71BF63A2400CA004D /* meow.wav */; };
+		C6F396AB1BF63D1900CA004D /* bark.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6F396AA1BF63D1900CA004D /* bark.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C6F396971BF5885800CA004D /* CatDogYearsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDogYearsUITests.swift; sourceTree = "<group>"; };
 		C6F396991BF5885800CA004D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6F396A51BF588B500CA004D /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C6F396A71BF63A2400CA004D /* meow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = meow.wav; path = Assets.xcassets/meow.dataset/meow.wav; sourceTree = "<group>"; };
+		C6F396AA1BF63D1900CA004D /* bark.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bark.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				C6F396801BF5885800CA004D /* LaunchScreen.storyboard */,
 				C6F396831BF5885800CA004D /* Info.plist */,
 				C6F396A51BF588B500CA004D /* MainVC.swift */,
+				C6F396A71BF63A2400CA004D /* meow.wav */,
+				C6F396AA1BF63D1900CA004D /* bark.m4a */,
 			);
 			path = CatDogYears;
 			sourceTree = "<group>";
@@ -232,8 +238,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F396A81BF63A2400CA004D /* meow.wav in Resources */,
 				C6F396821BF5885800CA004D /* LaunchScreen.storyboard in Resources */,
 				C6F3967F1BF5885800CA004D /* Assets.xcassets in Resources */,
+				C6F396AB1BF63D1900CA004D /* bark.m4a in Resources */,
 				C6F3967D1BF5885800CA004D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
